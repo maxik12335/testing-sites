@@ -7,7 +7,7 @@ burger.addEventListener("click", () => {
   if(menu.classList.contains("header-show")) {
     menu.classList.remove("header-show")
 
-    burger.classList.remove("burger-close")
+    burger.classList.remove("burger-hide")
 
     burgerItems[0].style.transform = "rotate(0deg)"
     burgerItems[0].style.position = "relative"
@@ -17,7 +17,7 @@ burger.addEventListener("click", () => {
   } else {
     menu.classList.add("header-show")
     
-    burger.classList.add("burger-close")
+    burger.classList.add("burger-hide")
 
     burgerItems[0].style.transform = "rotate(45deg)"
     burgerItems[0].style.position = "absolute"
