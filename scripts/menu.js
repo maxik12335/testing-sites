@@ -7,7 +7,7 @@ burger.addEventListener("click", () => {
   if(menu.classList.contains("header-show")) {
     menu.classList.remove("header-show")
 
-    burger.classList.remove("burger-hide")
+    burger.classList.remove("burger-close")
 
     burgerItems[0].style.transform = "rotate(0deg)"
     burgerItems[0].style.position = "relative"
@@ -17,7 +17,7 @@ burger.addEventListener("click", () => {
   } else {
     menu.classList.add("header-show")
     
-    burger.classList.add("burger-hide")
+    burger.classList.add("burger-close")
 
     burgerItems[0].style.transform = "rotate(45deg)"
     burgerItems[0].style.position = "absolute"
@@ -47,10 +47,6 @@ window.addEventListener("scroll", () => {
   if(document.querySelector(".movie-modal-open")) {
     menu.classList.add("header-hide")
     burger.classList.add("burger-hide")
-  }
-
-  if(pageYOffset === 0 && !document.querySelector(".movie-modal-open")) {
-    burger.classList.remove("burger-hide")
   }
 
   count = pageYOffset

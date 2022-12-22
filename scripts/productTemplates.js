@@ -12,6 +12,7 @@ product.forEach((item, index) => {
     movieModal.classList.add("movie-modal-open");
 
     document.querySelector(".header").classList.add("header-hide")
+    document.querySelector(".burger").classList.add("burger-hide")
   })
 
   item.addEventListener("mouseover", () => {
