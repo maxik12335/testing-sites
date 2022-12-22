@@ -31,14 +31,13 @@ burger.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
 
-
-  if(count > pageYOffset) {
+  if(count > pageYOffset || pageYOffset < 200) {
     console.log(count + " НАВЕРХ")
     menu.classList.remove("header-hide")
     burger.classList.remove("burger-hide")
   }
 
-  if(count < pageYOffset) {
+  if(count < pageYOffset && count >= 200) {
     console.log(count + " ВНИЗ")
     menu.classList.add("header-hide")
     burger.classList.add("burger-hide")
