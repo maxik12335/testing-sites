@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/main.css">
+  <title>Contacts</title>
+</head>
+<body>
+
+  <div class="movie-modal">
+    <video 
+      class="video"
+      src="movies/${movie}.mp4"
+      controls="controls"
+    ></video>
+
+    <div class="modal-close">
+      <span class="modal-close__item"></span>
+      <span class="modal-close__item"></span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navigation">
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a href="../index.html" class="menu-link">Главная</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="about.html" class="menu-link">Обо мне</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-link">Портфолио</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="contacts.html" class="menu-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="burger">
+    <span class="burger__item"></span>
+    <span class="burger__item"></span>
+    <span class="burger__item"></span>
+  </div>
+
+  <section class="section portfolio">
+    <div class="container">
+      <div class="section__content-box">
+        <h2 class="section__title text-right">Портфолио</h2>
+        <div class="product">
+          <div class="product__item" data-value="test-movie">
+            <p class="product__title text-center">Фёдор Бондарчук</p>
+            <img src="../images/play-test.svg" class="product__play" alt="play">
+          </div>
+          <div class="product__item">
+            <p class="product__title text-center">Кто такой продюсер</p>
+            <img src="../images/play-test.svg" class="product__play" alt="play">
+          </div>
+          <div class="product__item">
+            <p class="product__title text-center">Чем занимается продюсер</p>
+            <img src="../images/play-test.svg" class="product__play" alt="play">
+          </div>
+          <div class="product__item">
+            <p class="product__title text-center">Как я стал продюсером ?</p>
+            <img src="../images/play-test.svg" class="product__play" alt="play">
+          </div>
+          <div class="product__item">
+            <p class="product__title text-center">Вселенная продюсера</p>
+            <img src="../images/play-test.svg" class="product__play" alt="play">
+          </div>  
+          <div class="product__item">
+            <p class="product__title text-center">Как поступить на продюсера</p>
+            <img src="../images/play-test.svg" class="product__play" alt="play">
+          </div>
+          <div class="product__item">
+            <p class="product__title text-center">Мама - продюсер</p>
+            <img src="../images/play-test.svg" class="product__play" alt="play">
+          </div>
+          <div class="product__item">
+            <p class="product__title text-center">8 критериев хорошего продюсера</p>
+            <img src="../images/play-test.svg" class="product__play" alt="play">
+          </div>
+          <div class="product__item">
+            <p class="product__title text-center">Профессия продюсер</p>
+            <img src="../images/play-test.svg" class="product__play" alt="play">
+          </div>
+        </div>
+        <button class="button">Показать ещё</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="../scripts/productTemplates.js"></script>
+  <script src="../scripts/menu.js"></script>
+</body>
+</html>

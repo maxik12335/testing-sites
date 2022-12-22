@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/main.css">
+  <title>Contacts</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navigation">
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a href="../index.html" class="menu-link">Главная</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="about.html" class="menu-link">Обо мне</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="portfolio.html" class="menu-link">Портфолио</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="burger">
+    <span class="burger__item"></span>
+    <span class="burger__item"></span>
+    <span class="burger__item"></span>
+  </div>
+
+  <section class="section contacts">
+    <div class="container">
+      <div class="section__content-box">
+        <h2 class="section__title text-center">Контакты</h2>
+        <p class="contacts__description text-center text-up">
+          Связаться со мной можно любым удобным способом
+        </p>
+        <div class="grouping">
+          <div class="grouping__item">
+            <h3 class="grouping__title">Звони или пиши</h3>
+            <a class="contacts__call text-center" href="tel: +79999999999">
+              +7-999-999-99-99
+            </a>
+            <div class="socail-network">
+                <a href="#" class="socail-network__link">
+                  <img 
+                    class="socail-network__img" 
+                    src="../images/soc-network/watsapp.svg" 
+                    alt="watsapp"
+                  >
+                </a>
+
+                <a href="#" class="socail-network__link">
+                  <img 
+                    class="socail-network__img" 
+                    src="../images/soc-network/vk.svg" 
+                    alt="vk"
+                  >
+                </a>
+
+                <a href="#" class="socail-network__link">
+                  <img 
+                    class="socail-network__img"
+                    src="../images/soc-network/telegram.svg" 
+                    alt="telegram"
+                  >
+                </a>
+            </div>
+          </div>
+
+          <form class="grouping__item">
+            <h3 class="grouping__title">Оставь контакты и наберу сам</h3>
+            <div class="form__inputs">
+              <input type="text" class="input" name="name" placeholder="Ваше имя">
+              <input type="text" class="input" name="email" placeholder="Email">
+              <input type="tel" class="input" name="tel" placeholder="Телефон">
+            </div>
+            <textarea name="message" class="textarea"></textarea>
+            <button type="submit" class="button button__contacts">Отправить</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <script src="../scripts/menu.js"></script>
+</body>
+</html>

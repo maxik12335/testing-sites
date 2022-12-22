@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Главная</title>
+</head>
+<body>
+  <main class="main">
+
+    <div class="movie-modal">
+      <video 
+        class="video"
+        src="movies/${movie}.mp4"
+        controls="controls"
+      ></video>
+
+      <div class="modal-close">
+        <span class="modal-close__item"></span>
+        <span class="modal-close__item"></span>
+      </div>
+    </div>
+    
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a href="#" class="menu-link">Главная</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="templates/about.html" class="menu-link">Обо мне</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="templates/portfolio.html" class="menu-link">Портфолио</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="templates/contacts.html" class="menu-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="burger">
+      <span class="burger__item"></span>
+      <span class="burger__item"></span>
+      <span class="burger__item"></span>
+    </div>
+
+    <section class="top">
+      <div class="container">
+        <div class="top__content">
+          <h1 class="top__title text-center">Макс Гиль</h1>
+          <p class="top__description text-center">профессиональный продюсер</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about">
+      <div class="container">
+        <div class="section__content-box">
+          <h2 class="section__title">Коротко обо мне</h2>
+
+          <p class="section__description">
+            Меня зовут Макс Гиль. Я профессиональный продюсер в области создания промо роликов о средних и крупных компаниях
+          </p>
+
+          <p class="section__description">
+            Меня рекомендуют крупным заказчикам по 2 причинам: высокое качество и команда профессионалов
+          </p>
+
+          <a 
+            href="templates/about.html"
+            class="button about-button text-center"
+          >Узнать подробнее</a>
+
+          <img class="about-img" src="images/about.svg" alt="about">
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section services">
+      <div class="container">
+        <div class="section__content-box">
+          <h2 class="section__title services-title text-center">Услуги</h2>
+          <div class="services-lists">
+            <ul class="services-list">
+              <h3 class="section-title">Заголовок</h3>
+              <li class="services-list__item">+ Услуга 1</li>
+              <li class="services-list__item">+ Услуга 2</li>
+              <li class="services-list__item">+ Услуга 3</li>
+              <li class="services-list__item">+ Услуга 4</li>
+              <li class="services-list__item">+ Услуга 5</li>
+            </ul>
+
+            <ul class="services-list">
+              <h3 class="section-title">Заголовок</h3>
+              <li class="services-list__item">+ Услуга 1</li>
+              <li class="services-list__item">+ Услуга 2</li>
+              <li class="services-list__item">+ Услуга 3</li>
+              <li class="services-list__item">+ Услуга 4</li>
+              <li class="services-list__item">+ Услуга 5</li>
+            </ul>
+
+            <ul class="services-list">
+              <h3 class="section-title">Заголовок</h3>
+              <li class="services-list__item">+ Услуга 1</li>
+              <li class="services-list__item">+ Услуга 2</li>
+              <li class="services-list__item">+ Услуга 3</li>
+              <li class="services-list__item">+ Услуга 4</li>
+              <li class="services-list__item">+ Услуга 5</li>
+            </ul>
+
+            <ul class="services-list">
+              <h3 class="section-title">Заголовок</h3>
+              <li class="services-list__item">+ Услуга 1</li>
+              <li class="services-list__item">+ Услуга 2</li>
+              <li class="services-list__item">+ Услуга 3</li>
+              <li class="services-list__item">+ Услуга 4</li>
+              <li class="services-list__item">+ Услуга 5</li>
+            </ul>
+
+            <ul class="services-list">
+              <h3 class="section-title">Заголовок</h3>
+              <li class="services-list__item">+ Услуга 1</li>
+              <li class="services-list__item">+ Услуга 2</li>
+              <li class="services-list__item">+ Услуга 3</li>
+              <li class="services-list__item">+ Услуга 4</li>
+              <li class="services-list__item">+ Услуга 5</li>
+            </ul>
+
+            <ul class="services-list">
+              <h3 class="section-title">Заголовок</h3>
+              <li class="services-list__item">+ Услуга 1</li>
+              <li class="services-list__item">+ Услуга 2</li>
+              <li class="services-list__item">+ Услуга 3</li>
+              <li class="services-list__item">+ Услуга 4</li>
+              <li class="services-list__item">+ Услуга 5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section step">
+      <div class="container">
+        <div class="section__content-box">
+          <h2 class="section__title step-section__title text-center">ШАГИ</h2>
+
+          <ul class="step-list">
+            <li class="step-item">
+              <img class="step-img" src="images/steps/meet.svg" alt="">
+              <h3 class="step-title">Шаг 1</h3>
+              <p class="step-text">Личная встреча и обсуждение проекта</p>
+
+            </li>
+
+            <li class="step-item">
+              <img class="step-img" src="images/steps/learn.svg" alt="">
+              <h3 class="step-title">Шаг 2</h3>
+              <p class="step-text">
+                Изучение локации
+              </p>
+            </li>
+
+            <li class="step-item">
+              <img class="step-img" src="images/steps/film.svg" alt="">
+              <h3 class="step-title">Шаг 3</h3>
+              <p class="step-text">
+                Съемочный день
+              </p>
+
+            </li>
+
+            <li class="step-item">
+              <img class="step-img" src="images/steps/montage.svg" alt="">
+              <h3 class="step-title">Шаг 4</h3>
+              <p class="step-text">
+                Монтаж видеоролика
+              </p>
+
+            </li>
+
+            <li class="step-item">
+              <img class="step-img" src="images/steps/delivery.svg" alt="">
+              <h3 class="step-title">Шаг 5</h3>
+              <p class="step-text">
+                Сдача проекта
+              </p>
+
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section team">
+      <div class="container">
+        <div class="section__content-box team-box">
+          <h2 class="section__title text-center">Моя команда</h2>
+          <div class="team">
+            <div class="team-item">
+              <img class="team-img" src="images/team-movie.svg" alt="">
+              <h3 class="team-title">Видео оператор</h3>
+            </div>
+
+            <div class="team-item">
+              <img class="team-img" src="images/team-montage.svg" alt="">
+              <h3 class="team-title">Видео монтажёр</h3>
+            </div>
+
+            <div class="team-item">
+              <img class="team-img" src="images/team-designer.svg" alt="">
+              <h3 class="team-title">Видео дизайнер</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio">
+      <div class="container">
+        <div class="section__content-box">
+          <h2 class="section__title text-right">Портфолио</h2>
+          <div class="product">
+            <div class="product__item" data-value="test-movie">
+              <p class="product__title text-center">Фёдор Бондарчук</p>
+              <img src="./images/play-test.svg" class="product__play" alt="play">
+            </div>
+            <div class="product__item">
+              <p class="product__title text-center">Кто такой продюсер</p>
+              <img src="./images/play-test.svg" class="product__play" alt="play">
+            </div>
+            <div class="product__item">
+              <p class="product__title text-center">Чем занимается продюсер</p>
+              <img src="./images/play-test.svg" class="product__play" alt="play">
+            </div>
+            <div class="product__item">
+              <p class="product__title text-center">Как я стал продюсером ?</p>
+              <img src="./images/play-test.svg" class="product__play" alt="play">
+            </div>
+            <div class="product__item">
+              <p class="product__title text-center">Вселенная продюсера</p>
+              <img src="./images/play-test.svg" class="product__play" alt="play">
+            </div>  
+            <div class="product__item">
+              <p class="product__title text-center">Как поступить на продюсера</p>
+              <img src="./images/play-test.svg" class="product__play" alt="play">
+            </div>
+            <div class="product__item">
+              <p class="product__title text-center">Мама - продюсер</p>
+              <img src="./images/play-test.svg" class="product__play" alt="play">
+            </div>
+            <div class="product__item">
+              <p class="product__title text-center">8 критериев хорошего продюсера</p>
+              <img src="./images/play-test.svg" class="product__play" alt="play">
+            </div>
+            <div class="product__item">
+              <p class="product__title text-center">Профессия продюсер</p>
+              <img src="./images/play-test.svg" class="product__play" alt="play">
+            </div>
+          </div>
+          <a href="templates/portfolio.html" class="button text-center">Показать ещё</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts">
+      <div class="container">
+        <div class="section__content-box">
+          <h2 class="section__title text-center">Контакты</h2>
+          <p class="contacts__description text-center text-up">
+            Связаться со мной можно любым удобным способом
+          </p>
+          <div class="grouping">
+            <div class="grouping__item">
+              <h3 class="grouping__title">Звони или пиши</h3>
+              <a class="contacts__call text-center" href="tel: +79999999999">
+                +7-999-999-99-99
+              </a>
+              <div class="socail-network">
+                  <a href="#" class="socail-network__link">
+                    <img 
+                      class="socail-network__img" 
+                      src="images/soc-network/watsapp.svg" 
+                      alt="watsapp"
+                    >
+                  </a>
+
+                  <a href="#" class="socail-network__link">
+                    <img 
+                      class="socail-network__img" 
+                      src="images/soc-network/vk.svg" 
+                      alt="vk"
+                    >
+                  </a>
+
+                  <a href="#" class="socail-network__link">
+                    <img 
+                      class="socail-network__img"
+                      src="images/soc-network/telegram.svg" 
+                      alt="telegram"
+                    >
+                  </a>
+              </div>
+            </div>
+
+            <form class="grouping__item">
+              <h3 class="grouping__title">Оставь контакты и наберу сам</h3>
+              <div class="form__inputs">
+                <input type="text" class="input" name="name" placeholder="Ваше имя">
+                <input type="text" class="input" name="email" placeholder="Email">
+                <input type="tel" class="input" name="tel" placeholder="Телефон">
+              </div>
+              <textarea name="message" class="textarea"></textarea>
+              <button type="submit" class="button button__contacts">Отправить</button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/product.js"></script>
+  <script src="scripts/menu.js"></script>
+</body>
+</html>
