@@ -30,6 +30,8 @@ burger.addEventListener("click", () => {
 })
 
 window.addEventListener("scroll", () => {
+
+
   if(count > pageYOffset) {
     console.log(count + " НАВЕРХ")
     menu.classList.remove("header-hide")
@@ -45,6 +47,10 @@ window.addEventListener("scroll", () => {
   if(document.querySelector(".movie-modal-open")) {
     menu.classList.add("header-hide")
     burger.classList.add("burger-hide")
+  }
+
+  if(pageYOffset === 0 && !document.querySelector(".movie-modal-open")) {
+    burger.classList.remove("burger-hide")
   }
 
   count = pageYOffset
